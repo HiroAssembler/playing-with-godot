@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="FuncGodotFGDFile" format=3 uid="uid://dqkjkvdc4bkb4"]
+
+[ext_resource type="Script" uid="uid://drlmgulwbjwqu" path="res://addons/func_godot/src/fgd/func_godot_fgd_file.gd" id="1_87tdd"]
+[ext_resource type="Resource" uid="uid://crgpdahjaj" path="res://addons/func_godot/fgd/func_godot_fgd.tres" id="1_prhhh"]
+
+[resource]
+script = ExtResource("1_87tdd")
+fgd_name = "FPS_DEVKIT"
+base_fgd_files = Array[Resource]([ExtResource("1_prhhh")])
+metadata/_custom_type_script = "uid://drlmgulwbjwqu"
