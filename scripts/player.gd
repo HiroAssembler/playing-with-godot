@@ -29,7 +29,7 @@ func _physics_process(delta: float) -> void:
 		if not Input.is_action_pressed("jump"):
 			want_jump = 0
 	if is_on_floor():
-		jump_time = 5
+		jump_time = 4
 	if Input.is_action_just_pressed("jump"):
 		want_jump = 5
 		
@@ -56,7 +56,8 @@ func _physics_process(delta: float) -> void:
 		velocity.x = velocity.x * air_fricction
 		velocity.z = velocity.z * air_fricction
 	
-	want_jump -= 1
+	if not jump_time > 0:
+		want_jump -= 1
 	jump_time -= 1
 	move_and_slide()
 	

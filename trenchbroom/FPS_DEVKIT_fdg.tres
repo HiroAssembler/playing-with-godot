@@ -2,9 +2,11 @@
 
 [ext_resource type="Script" uid="uid://drlmgulwbjwqu" path="res://addons/func_godot/src/fgd/func_godot_fgd_file.gd" id="1_87tdd"]
 [ext_resource type="Resource" uid="uid://crgpdahjaj" path="res://addons/func_godot/fgd/func_godot_fgd.tres" id="1_prhhh"]
+[ext_resource type="Resource" uid="uid://gw0am868fh20" path="res://trenchbroom/fgd/solid/moving_up_thingy.tres" id="2_wf8xs"]
 
 [resource]
 script = ExtResource("1_87tdd")
 fgd_name = "FPS_DEVKIT"
 base_fgd_files = Array[Resource]([ExtResource("1_prhhh")])
+entity_definitions = Array[Resource]([ExtResource("2_wf8xs")])
 metadata/_custom_type_script = "uid://drlmgulwbjwqu"

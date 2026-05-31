@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="FuncGodotFGDSolidClass" format=3 uid="uid://gw0am868fh20"]
+
+[ext_resource type="Script" uid="uid://5cow84q03m6a" path="res://addons/func_godot/src/fgd/func_godot_fgd_solid_class.gd" id="1_xo7bj"]
+[ext_resource type="Script" uid="uid://cibbow5ucwak7" path="res://scripts/moving_ig.gd" id="2_w4ga5"]
+
+[resource]
+script = ExtResource("1_xo7bj")
+script_class = ExtResource("2_w4ga5")
+classname = "func_test"
+description = "testing"
+class_properties = Dictionary[String, Variant]({
+"open_distance": 20.0,
+"speed": 0.0
+})
+node_class = "AnimatableBody3D"
+metadata/_custom_type_script = "uid://5cow84q03m6a"
