@@ -10,7 +10,7 @@ var side_speed: float = 3.0
 var fricction: float = .7
 var horizontal_speed: Vector3 = Vector3.ZERO
 var max_speed: float = 15.0
-var air_fricction: float = 0.97
+var air_fricction: float = 0.94
 
 func update_rotation(input: Vector3):
 	transform.basis = Basis.from_euler(input)

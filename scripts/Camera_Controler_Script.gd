@@ -1,5 +1,6 @@
 class_name CameraController extends Node3D
 
+#there are tutorials you should not follow
 @export var debug: bool = false
 @export_category("Reference")
 @onready var component_mouse_capture: MOUSECAPTURECOMPONENT = $"../Components"

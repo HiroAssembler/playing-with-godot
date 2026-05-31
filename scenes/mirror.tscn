@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://d18nvm7o15cd6"]
+
+[ext_resource type="Script" uid="uid://bi7knd663whyd" path="res://scripts/mirror.gd" id="1_5o7h0"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_5o7h0"]
+viewport_path = NodePath("SubViewport")
+
+[node name="Mirror" type="Node3D" unique_id=1550207035]
+transform = Transform3D(1.0000001, 0, 0, 0, 1.0000001, 0, 0, 0, 1.0000001, 0, 0, 0)
+script = ExtResource("1_5o7h0")
+width = 480.0
+height = 360.0
+
+[node name="MirrorSprite" type="Sprite3D" parent="." unique_id=64191740]
+texture = SubResource("ViewportTexture_5o7h0")
+
+[node name="SubViewport" type="SubViewport" parent="." unique_id=1457711893]
+size = Vector2i(480, 360)
+size_2d_override = Vector2i(80, 0)
+
+[node name="mirror_neck_y" type="Node3D" parent="SubViewport" unique_id=1889649323]
+
+[node name="mirror_neck_z" type="Node3D" parent="SubViewport/mirror_neck_y" unique_id=167971039]
+
+[node name="MirrorCamera" type="Camera3D" parent="SubViewport/mirror_neck_y/mirror_neck_z" unique_id=1693518324]
+fov = 125.3
